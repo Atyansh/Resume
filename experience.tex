@@ -8,7 +8,29 @@
 %	SECTION CONTENT
 %----------------------------------------------------------------------------------------
 
+\newlength{\myspacing}
+\setlength{\myspacing}{0.5em}
+
 \begin{cventries}
+
+%------------------------------------------------
+
+\cventry
+{Senior Software Engineer} % Job title
+{\raisebox{-0.07cm}{\includegraphics[height=0.35cm]{bytedance}} --- Global Payments Security and Privacy Team} % Organization
+{San Jose, CA} % Location
+{March 2024 --- Present} % Date(s)
+{% Description(s) of tasks/responsibilities
+  \begin{cvitems}
+    \item {Detecting abusive automated behavior such as account takeover and payment fraud}
+    \item {Protecting payments APIs from web attacks and DDoS}
+    \item {Writing backend services using \textbf{Golang}, \textbf{Redis}, \textbf{MySQL}, \textbf{Kafka}}
+    \item {Built an internal Inventory System to track metadata for all Payments APIs}
+    \item {Building a rule engine platform at the API Gateway layer to intercept all payment transactions}
+  \end{cvitems}
+}
+
+\vspace{\myspacing}
 
 %------------------------------------------------
 
@@ -16,16 +38,18 @@
 {Staff Software Engineer} % Job title
 {{\includegraphics[height=0.275cm]{block}} --- Privacy Engineering} % Organization
 {San Francisco, CA} % Location
-{May 2022 - Present} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {Leading Consent Management Framework at Block, built solutions for cookie consent across both Web and Mobile}
-\item {Worked on in house data deletion and export systems for privacy compliance}
-\item {Primarily using \textbf{Java}, \textbf{MySQL}, \textbf{Datadog}, \textbf{AWS}, \textbf{Snowflake}, \textbf{Terraform}}
-\item {Acted as an adhoc privacy analyst, surfacing and mitigating privacy concerns for Cash Contacts}
-\item {Created long term strategy for purpose based data classification and asset inventory}
-\end{cvitems}
+{May 2022 --- March 2024} % Date(s)
+{% Description(s) of tasks/responsibilities
+  \begin{cvitems}
+    \item {Leading Consent Management Framework at Block, built solutions for cookie consent across both Web and Mobile}
+    \item {Worked on in house data deletion and export systems for privacy compliance}
+    \item {Primarily using \textbf{Java}, \textbf{MySQL}, \textbf{Datadog}, \textbf{AWS}, \textbf{Snowflake}, \textbf{Terraform}}
+    \item {Acted as an adhoc privacy analyst, surfacing and mitigating privacy concerns for Cash Contacts}
+    \item {Created long term strategy for purpose based data classification and asset inventory}
+  \end{cvitems}
 }
+
+\vspace{\myspacing}
 
 %------------------------------------------------
 
@@ -33,16 +57,18 @@
 {Senior Software Engineer} % Job title
 {{\includegraphics[height=0.275cm]{meta}} --- Privacy Infrastructure} % Organization
 {Menlo Park, CA} % Location
-{August 2017 - May 2022} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {Focusing on detecting and mitigating large scale scraping attacks on Facebook}
-\item {Build systems to observe, classify, and mitigate botted activity}
-\item {Understanding attacker intent, measuring signals, deducing patterns, and engineering features out of them}
-\item {Primarily using \textbf{Haskell}, \textbf{Hack}, and \textbf{Python}}
-\item {Additionally part of the \textbf{Privacy IMOC} oncall rotation where I'm responsible for coordinating response for privacy incidents at the company and postmortem reviews}
-\end{cvitems}
+{August 2017 --- May 2022} % Date(s)
+{% Description(s) of tasks/responsibilities
+  \begin{cvitems}
+    \item {Focus on detecting and mitigating large scale scraping attacks on Facebook and Instagram}
+    \item {Build systems to observe, classify, and mitigate botted activity}
+    \item {Understanding attacker intent, measuring signals, deducing patterns, and engineering features out of them}
+    \item {Primarily using \textbf{Haskell}, \textbf{Hack}, and \textbf{Python}}
+    \item {Additionally part of the \textbf{Privacy IMOC} oncall rotation where I'm responsible for coordinating response for privacy incidents at the company and postmortem reviews}
+  \end{cvitems}
 }
+
+\vspace{\myspacing}
 
 %------------------------------------------------
 
@@ -50,17 +76,19 @@
 {Software Engineer} % Job title
 {{\includegraphics[height=0.275cm]{meta}} --- Messenger Privacy} % Organization
 {Menlo Park, CA} % Location
-{March 2020 - November 2021} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {Building infrastructure to make Messenger clients more secure and compliant with privacy regulations}
-\item {Created a differential privacy focused logging framework for both server and \textbf{iOS} client}
-\item {Built a real time engine to surface consent flows on mobile clients}
-\item {Created scripts for proper ownership classification for entire Messenger codebase}
-\item {Pioneered a new Messenger Security team focused on detecting and mitigating client side vulnerabilities}
-\item {Primarily using \textbf{Hack}, \textbf{C}, and \textbf{Python}}
-\end{cvitems}
+{March 2020 --- November 2021} % Date(s)
+{% Description(s) of tasks/responsibilities
+  \begin{cvitems}
+    \item {Building infrastructure to make Messenger clients more secure and compliant with privacy regulations}
+    \item {Created a differential privacy focused logging framework for both server and \textbf{iOS} client}
+    \item {Built a real time engine to surface consent flows on mobile clients}
+    \item {Created scripts for proper ownership classification for entire Messenger codebase}
+    \item {Pioneered a new Messenger Security team focused on detecting and mitigating client side vulnerabilities}
+    \item {Primarily using \textbf{Hack}, \textbf{C}, and \textbf{Python}}
+  \end{cvitems}
 }
+
+\vspace{\myspacing}
 
 %------------------------------------------------
 
@@ -69,15 +97,17 @@
 {{\includegraphics[height=0.275cm]{meta}} --- Ads Signals} % Organization
 {Menlo Park, CA} % Location
 {Summer 2016} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {Integrated real time aggregations for conversion optimization}
-\item {Worked on \textbf{C++} backend to ingest data and perform aggregations}
-\item {Implemented \textbf{PHP/HACK} endpoint to process API calls}
-\item {Created a \textbf{React JS} based UI to create aggregation rules}
-\item {Wrote a \textbf{thrift} service to send conversion data between PHP and C++ backend}
-\end{cvitems}
+{% Description(s) of tasks/responsibilities
+  \begin{cvitems}
+    \item {Integrated real time aggregations for conversion optimization}
+    \item {Worked on \textbf{C++} backend to ingest data and perform aggregations}
+    \item {Implemented \textbf{PHP/HACK} endpoint to process API calls}
+    \item {Created a \textbf{React JS} based UI to create aggregation rules}
+    \item {Wrote a \textbf{thrift} service to send conversion data between PHP and C++ backend}
+  \end{cvitems}
 }
+
+\vspace{\myspacing}
 
 %------------------------------------------------    
 
@@ -86,29 +116,33 @@
 {{\includegraphics[height=0.275cm]{meta}} --- Ads Infrastructure} % Organization
 {Menlo Park, CA} % Location
 {Fall 2015} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {Created a real time storage solution for an in-house object delivery distributed system in \textbf{C++}}
-\item {Improved network performance by implementing a more efficient serialization method}
-\item {Increased storage efficiency of connection objects in \textbf{HDFS} by 30\%}
-\item {Used an in house real time key value storage system to deliver connection objects}
-\end{cvitems}
+{% Description(s) of tasks/responsibilities
+  \begin{cvitems}
+    \item {Created a real time storage solution for an in-house object delivery distributed system in \textbf{C++}}
+    \item {Improved network performance by implementing a more efficient serialization method}
+    \item {Increased storage efficiency of connection objects in \textbf{HDFS} by 30\%}
+    \item {Used an in house real time key value storage system to deliver connection objects}
+  \end{cvitems}
 }
+
+\vspace{\myspacing}
 
 %------------------------------------------------
 
 \cventry
 {Software Engineering Intern} % Job title
-{\google}%{\color{gB}G}{\color{gR}o}{\color{gY}o}{\color{gB}g}{\color{gG}l}{\color{gR}e}} % Organization
+{{\google} --- YouTube Infrastructure}%{\color{gB}G}{\color{gR}o}{\color{gY}o}{\color{gB}g}{\color{gG}l}{\color{gR}e}} % Organization
 {San Bruno, CA} % Location
 {Summer 2015} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {Migrated YouTube V3 API from \textbf{Java} to \textbf{Python} backend}
-\item {Improved safety of video fetches across the YouTube backend}
-\item {Added improved permission validation support for video fetch requests}
-\end{cvitems} 
+{% Description(s) of tasks/responsibilities
+  \begin{cvitems}
+    \item {Migrated YouTube V3 API from \textbf{Java} to \textbf{Python} backend}
+    \item {Improved safety of video fetches across the YouTube backend}
+    \item {Added improved permission validation support for video fetch requests}
+  \end{cvitems} 
 }
+
+\vspace{\myspacing}
 
 %------------------------------------------------
 
@@ -117,13 +151,13 @@
 {{\includegraphics[height=0.475cm]{viasat}} --- Satellite Internet Analytics} % Organization
 {Carlsbad, CA} % Location
 {Summer 2014} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {Created a Page Load Metrics Collection and Analysis Framework}
-\item {Developed Firefox extension in \textbf{JavaScript} to measure web page load times}
-\item {Set up \textbf{Python Flask} server with \textbf{nginx} to ingest page load times}
-\item {Set up \textbf{ElasticSearch} and \textbf{Hadoop} storage systems for page load time analysis}
-\end{cvitems}
+{% Description(s) of tasks/responsibilities
+  \begin{cvitems}
+    \item {Created a Page Load Metrics Collection and Analysis Framework}
+    \item {Developed Firefox extension in \textbf{JavaScript} to measure web page load times}
+    \item {Set up \textbf{Python Flask} server with \textbf{nginx} to ingest page load times}
+    \item {Set up \textbf{ElasticSearch} and \textbf{Hadoop} storage systems for page load time analysis}
+  \end{cvitems}
 }
 
 %------------------------------------------------
