@@ -90,60 +90,24 @@
 
 %------------------------------------------------
 
-\cventry
-{Software Engineering Intern} % Job title
-{{\includegraphics[height=0.275cm]{meta}} --- Ads Signals} % Organization
-{Menlo Park, CA} % Location
-{Summer 2016} % Date(s)
-{% Description(s) of tasks/responsibilities
-  \begin{cvitems}
-    \item {Built real time aggregations for conversion optimization across a \textbf{C++} backend, \textbf{PHP/Hack} endpoint, \textbf{thrift} service, and \textbf{React} UI}
-  \end{cvitems}
+% All four internships in one entry: one row each, logo first.
+\newcommand*{\internrow}[4]{%
+  \makebox[1.9cm][l]{#1} & \descriptionstyle{\textbf{#2}\enspace #3} & \entrydatestyle{#4} \\[1.6mm]
 }
-
-\vspace{\myspacing}
-
-%------------------------------------------------    
-
 \cventry
 {Software Engineering Intern} % Job title
-{{\includegraphics[height=0.275cm]{meta}} --- Ads Infrastructure} % Organization
-{Menlo Park, CA} % Location
-{Fall 2015} % Date(s)
-{% Description(s) of tasks/responsibilities
-  \begin{cvitems}
-    \item {Built real time \textbf{C++} storage for an in-house object delivery system, with 30\% more efficient \textbf{HDFS} storage}
-  \end{cvitems}
-}
-
-\vspace{\myspacing}
-
-%------------------------------------------------
-
-\cventry
-{Software Engineering Intern} % Job title
-{{\google} --- YouTube Infrastructure}%{\color{gB}G}{\color{gR}o}{\color{gY}o}{\color{gB}g}{\color{gG}l}{\color{gR}e}} % Organization
-{San Bruno, CA} % Location
-{Summer 2015} % Date(s)
-{% Description(s) of tasks/responsibilities
-  \begin{cvitems}
-    \item {Migrated the YouTube V3 API from a \textbf{Java} to a \textbf{Python} backend and improved permission validation for video fetches}
-  \end{cvitems} 
-}
-
-\vspace{\myspacing}
-
-%------------------------------------------------
-
-\cventry
-{Software Engineering Intern} % Job title
-{{\includegraphics[height=0.475cm]{viasat}} --- Satellite Internet Analytics} % Organization
-{Carlsbad, CA} % Location
-{Summer 2014} % Date(s)
-{% Description(s) of tasks/responsibilities
-  \begin{cvitems}
-    \item {Built a page load metrics framework: \textbf{JavaScript} Firefox extension, \textbf{Flask} ingest, \textbf{ElasticSearch}/\textbf{Hadoop} storage}
-  \end{cvitems}
+{Internships} % Organization
+{} % Location
+{2014 --- 2016} % Date(s)
+{% one row per internship
+  \vspace{-0.5mm}
+  \setlength\tabcolsep{0pt}%
+  \begin{tabular*}{\textwidth}{@{}l@{\hspace{1mm}}l@{\extracolsep{\fill}}r@{}}
+    \internrow{\includegraphics[height=0.275cm]{meta}}{Ads Signals}{Real time conversion aggregations in C++, Hack, thrift and React}{Summer 2016}
+    \internrow{\includegraphics[height=0.275cm]{meta}}{Ads Infrastructure}{Real time C++ storage for object delivery, 30\% leaner HDFS storage}{Fall 2015}
+    \internrow{\google}{YouTube Infrastructure}{Migrated the V3 API from Java to Python, safer video fetches}{Summer 2015}
+    \internrow{\includegraphics[height=0.40cm]{viasat}}{Satellite Internet Analytics}{Page load metrics: Firefox extension, Flask, ElasticSearch}{Summer 2014}
+  \end{tabular*}
 }
 
 %------------------------------------------------
