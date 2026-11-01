@@ -3,5 +3,11 @@ Source Code for my Résumé
 Original template is from Awesome CV
 https://github.com/posquit0/Awesome-CV
 
-Use the Makefile to build. Probably need to have the whole LaTeX suite stuff
-installed.
+Build:
+
+    brew install tectonic   # once
+    make                    # builds resume.pdf
+    make publish            # copies it to ../atyansh-website/public/resume.pdf
+
+Tectonic downloads the LaTeX packages it needs on the first build and caches
+them. The fonts (Roboto, Source Sans Pro, FontAwesome) are bundled in fonts/.
